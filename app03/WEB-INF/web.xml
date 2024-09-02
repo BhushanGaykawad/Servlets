@@ -1,0 +1,29 @@
+<web-app>
+	<servlet>
+		<servlet-name>configServlet</servlet-name>
+		<servlet-class>ConfigServlet</servlet-class>
+		<init-param>
+			<param-name>driverClass</param-name>
+			<param-value>oracle.jdbc.OracleDriver</param-value>
+		</init-param>
+		<init-param>
+			<param-name>url</param-name>
+			<param-value>jdbc:mysql:thin:@localhost:1521:xe</param-value>
+		</init-param>	
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>bhushangaikwad</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>Bhushan@25</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>configServlet</servlet-name>
+		<url-pattern>/config</url-pattern>
+	</servlet-mapping>
+
+
+
+</web-app>
