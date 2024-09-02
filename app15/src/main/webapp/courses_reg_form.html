@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>studentForm</title>
+</head>
+<body>
+<h2 style="color:red;" align="center">ABC Software Solutions</h2>
+<h3 style="color:blue;" align="center">Student Registration Form</h3>
+<form method="POST" action="./reg">
+<table align="center">
+<tr>
+	<th>Student Name</th>
+	<td><input type="text" name="sname"/></td>
+</tr>
+<tr>
+	<th>Student Qualification</th>
+	<td>
+		<input type="checkbox" name="squal" value="BSC"/>BSC
+		<input type="checkbox" name="squal" value="BTech"/>BTech
+		<input type="checkbox" name="squal" value="MCA"/>MCA
+		<input type="checkbox" name="squal" value="MTech"/>MTECH
+		<input type="checkbox" name="squal" value="PHD"/>PHD
+	</td>
+</tr>
+<tr>
+	<th> Student Gender</th>
+	<td>
+		<input type="radio" name="sgender" value="Male"/>Male
+		<input type="radio" name="sgender" value="Female"/>Female		
+	</td>
+</tr>
+<tr>
+	<th> Student Courses</th>
+	<td>
+		<select name="scourses" size="6" multiple="multiple">
+			<option value="C">C</option>
+			<option value="C++">C++</option>
+			<optgroup label="JAVA">
+				
+					<option value="CORE JAVa">Core Java</option>
+					<option value="Adv Java">Adv JAVA</option>
+					<option value="Hibernate">Hibernate</option>
+					<option value="Spring">Spring</option>
+			</optgroup>
+			<optgroup label=".NET">
+				<option value="C#.NET">C#.NET</option>
+				<option value="ASP.NET">ASP.NET</option>
+				<option value="MVC">MVC</option>
+			</optgroup>
+			<optgroup label="Python">
+				<option value="Core Python">Core Python</option>
+				<option value="Adv Python">Adv Python</option>
+				<option value="Django">Django Python</option>
+			</optgroup>		
+		</select>
+	</td>
+</tr>
+<tr>
+	<th> Branch</th>
+	<td>
+		<select name="branch">
+			<option value= "Pune">Pune</option>
+			<option value= "Mumbai">Mumbai</option>
+			<option value= "Delhi">Delhi</option>		
+		</select>
+	</td>
+</tr>
+<tr>
+	<th> Student Address</th>
+	<td>
+		<textarea name="saddr" rows="5" cols="30"></textarea>
+	</td>
+</tr>
+<tr>
+	<td><input type="submit" value="Registration"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
